@@ -15,3 +15,8 @@ scrapy startproject Webcrawler
 
 cd  REPO_WebCrawler/Webcrawler
 scrapy crawl Webcrawler -o data.json 
+
+
+
+!!!Projekt ist noch in Arbeit. Der Docker Conteiner ist daher noch nicht fertig und das Projekt kann noch 
+nicht gut auf anderen Maschinen ausgefürt werden!!!
