@@ -24,19 +24,10 @@ oder Crawl.sh ausführen (daten werden in "data.json" gesichert
 
 ##Daten Visualiesierung##
 
-- Wort Anzahl			=	wc -w < data.json
-- Zeilen Anzahl			=	wc -l < data.json
+- Wort Anzahl			=	wc -w data.json
+- Zeilen Anzahl			=	wc -L data.json
 
 - Bestimtes Wort suchen		=	grep "deinWort" data.json -i
 - Bestimtes Wort Anzahl		=	grep "deinWort" data.json -ic
-- Wort im titel Suchen			grep -o '"title": "[^"]*deinWort[^"]*"' data.json 
-
-###Mit output rechnen###
-
-count1=$(wc -l data.json)
-count2=$(grep -o '"title": "[^"]*trump[^"]*"' data.json)
-
-perc1=$(echo "$count2 / $count1 * 100 " | bc -l)
-echo "$perc1"
 
 
