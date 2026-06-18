@@ -1,3 +1,7 @@
+# WebCrawler
+Ein WebCrawler welcher alle Artikel von https://www.nbcnews.com in den letzen 24 sammelt und in eine Json datei speichert.
+Zusätzlich gitb es zwei Skripte zum Visualiesieren des Datensatzes. 
+
 # Installieren
 
 ## Lokal System
