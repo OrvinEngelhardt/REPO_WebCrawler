@@ -1,28 +1,22 @@
-#Installieren#
+# Installieren
 
-##Docker Variante##
-Docker install: https://docs.docker.com/engine/install/
+## Lokal System
+- python3 -m venv .venv
+- source .venv/bin/activate
+- pip3 install scrapy
 
-Nach dem installieren von Docker einfach die Folgenden Befehle ausführen: 
--docker build -t webcrawler .
--docker RUN webcrawler
+- scrapy startproject Webcrawler
 
+## Daten Crawlen
 
-##Lokal System##
-python3 -m venv .venv
-source .venv/bin/activate
-pip3 install scrapy
-
-scrapy startproject Webcrawler
-
-cd  REPO_WebCrawler/Webcrawler
-scrapy crawl Webcrawler -o data.json 
+- cd  REPO_WebCrawler/Webcrawler
+- scrapy crawl Webcrawler -o data.json 
 
 oder Crawl.sh ausführen (daten werden in "data.json" gesichert
 
 
 
-##Daten Visualiesierung##
+# Daten Visualiesierung
 
 - Wort Anzahl			=	wc -w < data.json
 - Zeilen Anzahl			=	wc -l < data.json
@@ -31,7 +25,7 @@ oder Crawl.sh ausführen (daten werden in "data.json" gesichert
 - Bestimtes Wort Anzahl		=	grep "deinWort" data.json -ic
 - Wort im titel Suchen			grep -o '"title": "[^"]*deinWort[^"]*"' data.json 
 
-###Mit output rechnen###
+## Mit output rechnen
 
 count1=$(wc -l data.json)
 count2=$(grep -o '"title": "[^"]*trump[^"]*"' data.json)
@@ -39,4 +33,10 @@ count2=$(grep -o '"title": "[^"]*trump[^"]*"' data.json)
 perc1=$(echo "$count2 / $count1 * 100 " | bc -l)
 echo "$perc1"
 
+## Visualiesierungs scripte
 
+chmod +x Visu.sh
+chmod +x Visu2.sh
+
+- Visu.sh läst die nach Wörtern und Sätzen im Datensatz suchen
+- Visu2.sh Zeigt an wann Artikel zum Datensatz hinzugefügt wurden und wie Viele 
