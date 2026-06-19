@@ -2,7 +2,7 @@
 Ein WebCrawler welcher alle Artikel von https://www.nbcnews.com in den letzen 24 sammelt und in eine Json datei speichert.
 Zusätzlich gitb es zwei Skripte zum Visualiesieren des Datensatzes. 
 
-<img width="1386" height="750" alt="Unbenanntes Diagramm drawio (1)" src="https://github.com/user-attachments/assets/3590682f-25d0-4204-b34c-4f5642ec1271" />
+<img width="1386" height="750" alt="webcrawller drawio" src="https://github.com/user-attachments/assets/1eddf714-ea1f-4b90-b48e-582f96a6a0e5" />
 
 # Installieren
 
